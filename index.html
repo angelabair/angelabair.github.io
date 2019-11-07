@@ -65,38 +65,49 @@
 	<section id="portfolio">
 		<h2 class="title">PORTFOLIO</h2>
 
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-secondary"><span class="menu-button" id="all">All</span></button>
-			<button type="button" class="btn btn-secondary"><span class="menu-button" id="illustrator">Illustrator</span></button>
-			<button type="button" class="btn btn-secondary"><span class="menu-button" id="indesign">Indesign</span></button>
-			<button type="button" class="btn btn-secondary"><span class="menu-button" id="photoshop">Photoshop</span></button>
+		<div class="wrapper text-center">
+		<div class="btn-group btn-group-toggle" role="group">
+			<button type="button" class="btn btn-outline shadow-none active" id="all">ALL</button>
+			<button type="button" class="btn btn-outline shadow-none" id="illustrator">ILLUSTRATOR</button>
+			<button type="button" class="btn btn-outline shadow-none" id="indesign">INDESIGN</button>
+			<button type="button" class="btn btn-outline shadow-none" id="photoshop">PHOTOSHOP</button>
+		</div>
 		</div>
 
 		<div class="container">
-			<div class="row grid">
-				<div class="col-md-4 illustrator">
+			<div class="row grid no-gutters">
+				<div class="col-md-4 indesign">
 					<a class="gallery-image-a">Gao Cha</a>
 				</div>
 				<div class="col-md-4 indesign">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Void</a>
 				</div>
 				<div class="col-md-4 indesign">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Hack the City</a>
 				</div>
 				<div class="col-md-4 photoshop">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Stars I Shall Find</a>
 				</div>
 				<div class="col-md-4 indesign">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Pembroke Smokes</a>
 				</div>
 				<div class="col-md-4 illustrator">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">HOLO</a>
 				</div>
 				<div class="col-md-4 illustrator">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Blue Teapot</a>
 				</div>
 				<div class="col-md-4 photoshop">
-					<a class="gallery-image-a"></a>
+					<a class="gallery-image-a">Cats of 2019</a>
+				</div>
+				<div class="col-md-4 photoshop">
+					<a class="gallery-image-a">Artifact</a>
+				</div>
+				<div class="col-md-4 photoshop">
+					<a class="gallery-image-a">Wanderers</a>
+				</div>
+				<div class="col-md-4 photoshop">
+					<a class="gallery-image-a">Squiddles</a>
 				</div>
 			</div>
 		</div>
@@ -146,8 +157,10 @@ $('#illustrator, #indesign, #photoshop, #all').click(function() {
 });
 });
 
-
-	</script>
+$(".btn-group > .btn").click(function(){
+    $(".btn-group > .btn").removeClass("active");
+    $(this).addClass("active");
+});	</script>
 
 </body>
 </html>
