@@ -55,7 +55,7 @@ p.text-2{
 	padding-bottom: 25px;
 }
 
-.navbar-custom, .bg-custom {
+.navbar-light, .bg-light {
 	background: #303D73;
 	border-bottom: 3px solid #07E6AB;
 }
@@ -89,8 +89,11 @@ p.text-2{
 
 #contact {
 	color: white;
-	height: 400px;
 	background-color: #1B2240;
+}
+
+form {
+	padding-bottom: 50px;
 }
 
 h2.title {
@@ -98,6 +101,10 @@ h2.title {
 	padding-top: 40px;
 	padding-bottom: 60px;
 	font-size: 40px;
+}
+
+.w-75 {
+	max-width: 500px;
 }
 
 .back-to-top {
@@ -149,7 +156,7 @@ footer {
 
 a {
 	display: block;
-	        padding: 4px 8px;
+	padding: 4px 8px;
 }
 
 .gallery-image-a {
