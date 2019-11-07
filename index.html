@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/aba3371469.js" crossorigin="anonymous"></script>
 
 	<link rel="shortcut icon" href="">
 </head>
@@ -58,28 +59,95 @@
 	</section>
 
 	<section id="about">
-		<h2>About</h2>
+		<h2 class="title">ABOUT</h2>
 	</section>
 
 	<section id="portfolio">
-		<h2>Portfolio</h2>
+		<h2 class="title">PORTFOLIO</h2>
+
+		<div class="btn-group" role="group">
+			<button type="button" class="btn btn-secondary"><span class="menu-button" id="all">All</span></button>
+			<button type="button" class="btn btn-secondary"><span class="menu-button" id="illustrator">Illustrator</span></button>
+			<button type="button" class="btn btn-secondary"><span class="menu-button" id="indesign">Indesign</span></button>
+			<button type="button" class="btn btn-secondary"><span class="menu-button" id="photoshop">Photoshop</span></button>
+		</div>
+
+		<div class="container">
+			<div class="row grid">
+				<div class="col-md-4 illustrator">
+					<a class="gallery-image-a">Gao Cha</a>
+				</div>
+				<div class="col-md-4 indesign">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 indesign">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 photoshop">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 indesign">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 illustrator">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 illustrator">
+					<a class="gallery-image-a"></a>
+				</div>
+				<div class="col-md-4 photoshop">
+					<a class="gallery-image-a"></a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="projects">
-		<h2>Projects</h2>
+		<h2 class="title">PROJECTS</h2>
 	</section>
 
 	<section id="contact">
-		<h2>Contact</h2>
+		<h2 class="title">CONTACT</h2>
 	</section>
 
-	<footer>Made with <span style="color: red;">&#10084;</span> by Angela</footer>
 	
-	<script type="text/javascript" src="canvas.js"></script>
+
+	<footer>
+		<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+		Made with <span style="color: red;">&#10084;</span> by Angela
+	</footer>
+	
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+$grid = $('.grid');
+$grid.isotope();
+
+$('#illustrator, #indesign, #photoshop, #all').click(function() {
+
+  var id = $(this).attr('id');
+
+  if (id == 'all') {
+    $grid.isotope({
+      filter: '*'
+    });
+    return false;
+  }
+  $grid.isotope({
+    filter: '.' + id
+  });
+});
+});
+
+
+	</script>
 
 </body>
 </html>

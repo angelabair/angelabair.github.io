@@ -21,16 +21,11 @@ html, body {
 	overflow-x: hidden;
 }
 
-canvas {
-	/*z-index: 2;*/
-
-}
-
 .text {
 	text-align: center;
 	color: white;
 	width: 100%;
-	top: 35%;
+	top: 40%;
 	position: absolute;	
 	margin: 0 auto;
 	display: block;
@@ -48,8 +43,7 @@ canvas {
 
 br {
     display: block;
-    content: ""; 
-    margin-top: 20px; 
+    content: "";
 }
 
 p.text-2{
@@ -81,8 +75,8 @@ p.text-2{
 }
 
 #portfolio {
-	height: 900px;
 	background-color: #FFF2ED;
+	padding-bottom: 50px;
 }
 
 #projects {
@@ -96,8 +90,24 @@ p.text-2{
 	background-color: #1B2240;
 }
 
-.h2, h2 {
+h2.title {
 	text-align: center;
+	padding-top: 40px;
+	font-size: 40px;
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 60px;
+    display: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 
@@ -105,9 +115,22 @@ footer {
 	position: relative;
 	bottom: 0;
 	width: 100%;
-	padding: 20px;
+	padding: 30px;
 	font-size: 15px;
 	text-align: center;
 	color: #059bd8;
 	background: #303D73;
+}
+
+.gallery-image-a {
+  display: block;
+  height: 360px;
+  min-width: 100px;
+  background-position: center center;
+  transition: ease all 950ms;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 10px;
+  background-size: cover;
+  background-image: url('https://gamepedia.cursecdn.com/dota2_gamepedia/b/bb/Lich_icon.png?version=7cb34de5d2bb15610cda9474d6c1b306');
 }
