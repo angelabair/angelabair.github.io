@@ -55,10 +55,22 @@ p.text-2{
 	padding-bottom: 25px;
 }
 
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
 .navbar-light, .bg-light {
 	background: #303D73;
 	border-bottom: 3px solid #07E6AB;
+	color: white;
 }
+
 
 .navbar-nav {
 	float:none;
@@ -70,6 +82,18 @@ p.text-2{
 .navbar-nav > li {
 	display: inline-block;
 	float:none;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.active {
+    color: #059bd8;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
 }
 
 #about {
@@ -98,7 +122,7 @@ form {
 
 h2.title {
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 60px;
 	font-size: 40px;
 }
@@ -109,7 +133,7 @@ h2.title {
 
 .back-to-top {
 	position: absolute;
-	bottom: 60px;
+	bottom: 200px;
 	display: none;
 	font-size: 30px;
 	width: 50px;
@@ -172,3 +196,4 @@ a {
 	background-size: cover;
 	background-image: url('https://gamepedia.cursecdn.com/dota2_gamepedia/b/bb/Lich_icon.png?version=7cb34de5d2bb15610cda9474d6c1b306');
 }
+
