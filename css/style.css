@@ -197,3 +197,17 @@ a {
 	background-image: url('https://gamepedia.cursecdn.com/dota2_gamepedia/b/bb/Lich_icon.png?version=7cb34de5d2bb15610cda9474d6c1b306');
 }
 
+.contact-info {
+	text-align: center;
+	padding-bottom: 40px;
+	margin-top: -20px;
+}
+
+.display-left {
+	text-align: left;
+	display: inline-block;
+}
+
+.social {
+	font-size: 150%;
+}
