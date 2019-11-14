@@ -55,6 +55,10 @@ p.text-2{
 	padding-bottom: 25px;
 }
 
+button.btn .btn-outline-light {
+	border: 5px solid black;
+}
+
 .sticky.is-sticky {
     position: fixed;
     left: 0;
@@ -133,7 +137,7 @@ h2.title {
 
 .back-to-top {
 	position: absolute;
-	bottom: 100px;
+	bottom: 125px;
 	display: none;
 	font-size: 30px;
 	width: 50px;
@@ -209,5 +213,9 @@ a {
 }
 
 .social {
-	font-size: 150%;
+	font-size: 30px;
+}
+
+.btn-floating {
+	color: #07E6AB;
 }
