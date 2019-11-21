@@ -9,8 +9,10 @@
 	<meta name="description" content="Web and Graphic Designer">
 	<meta name="author" content="Angela Bair">
 
+	<!-- Local -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<!-- Hosted -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/aba3371469.js" crossorigin="anonymous"></script>
 
@@ -61,10 +63,24 @@
 
 	<section id="about">
 		<h2 class="title">ABOUT</h2>
+		<hr class="divider">
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>picture</p>
+				</div>
+				<div class="col">
+					<h3>Who am I?</h3>
+					<p>I'm a senior at Touro College for Digital Multimedia Design.</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="portfolio">
 		<h2 class="title">PORTFOLIO</h2>
+		<hr class="divider">
 
 		<div class="wrapper text-center">
 			<div class="btn-group btn-group-toggle" role="group">
@@ -123,6 +139,7 @@
 
 	<section id="contact">
 		<h2 class="title">CONTACT</h2>
+		<hr class="divider2">
 		<div class="contact-info">
 			<p class="display-left">
 				<i class="far fa-envelope"></i>  hello@angelabair.me <br>
@@ -174,27 +191,27 @@
    <ul class="social list-unstyled list-inline text-center">
       <li class="list-inline-item">
         <a class="btn-floating btn-tw mx-1" href="www.twitter.com">
-          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter circle-icon"></i>
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-insta mx-1" href="">
-          <i class="fab fa-instagram"> </i>
+          	<i class="fab fa-instagram circle-icon"> </i>
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-li mx-1" href="">
-          <i class="fab fa-linkedin-in"> </i>
+          <i class="fab fa-linkedin-in circle-icon"> </i>
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-github mx-1" href="">
-          <i class="fab fa-github"> </i>
+          <i class="fab fa-github circle-icon"> </i>
         </a>
       </li>
       <li class="list-inline-item">
         <a class="btn-floating btn-steam mx-1" href="">
-          <i class="fab fa-steam"> </i>
+          <i class="fab fa-steam circle-icon"> </i>
         </a>
       </li>
     </ul>
@@ -202,74 +219,16 @@
 	Made with <span style="color: red;">&#10084;</span> by Angela
 </footer>
 
-<script type="text/javascript" src="js/canvas.js"></script>
-<script type="text/javascript" src="js/gallery.js"></script>
-
+<!-- Hosted -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function () {
-		$grid = $('.grid');
-		$grid.isotope();
+<!-- Local -->
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
-		$('#illustrator, #indesign, #photoshop, #all').click(function() {
-
-			var id = $(this).attr('id');
-
-			if (id == 'all') {
-				$grid.isotope({
-					filter: '*'
-				});
-				return false;
-			}
-			$grid.isotope({
-				filter: '.' + id
-			});
-		});
-	});
-
-	$(".btn-group > .btn").click(function(){
-		$(".btn-group > .btn").removeClass("active");
-		$(this).addClass("active");
-	});	
-
-	$(document).ready(function () {
-                // Custom function which toggles between sticky class (is-sticky)
-                var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
-                	var stickyHeight = sticky.outerHeight();
-                	var stickyTop = stickyWrapper.offset().top;
-                	if (scrollElement.scrollTop() >= stickyTop) {
-                		stickyWrapper.height(stickyHeight);
-                		sticky.addClass("is-sticky");
-                	}
-                	else {
-                		sticky.removeClass("is-sticky");
-                		stickyWrapper.height('auto');
-                	}
-                };
-
-                // Find all data-toggle="sticky-onscroll" elements
-                $('[data-toggle="sticky-onscroll"]').each(function () {
-                	var sticky = $(this);
-                    var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-                    sticky.before(stickyWrapper);
-                    sticky.addClass('sticky');
-
-                    // Scroll & resize events
-                    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
-                    	stickyToggle(sticky, stickyWrapper, $(this));
-                    });
-
-                    // On page load
-                    stickyToggle(sticky, stickyWrapper, $(window));
-                });
-            });
-
-
-        </script>
-
-    </body>
-    </html>
+</body>
+</html>

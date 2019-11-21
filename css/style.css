@@ -127,7 +127,7 @@ form {
 h2.title {
 	text-align: center;
 	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-bottom: 5px;
 	font-size: 40px;
 }
 
@@ -137,7 +137,7 @@ h2.title {
 
 .back-to-top {
 	position: absolute;
-	bottom: 125px;
+	bottom: 165px;
 	display: none;
 	font-size: 30px;
 	width: 50px;
@@ -147,6 +147,11 @@ h2.title {
 	right: 0;
 	margin: 0 auto;
 	cursor: pointer;
+	background-color: #07E6AB;
+}
+
+.btn-light .back-to-top {
+	color: purple;
 }
 
 
@@ -157,7 +162,7 @@ footer {
 	padding: 30px;
 	font-size: 15px;
 	text-align: center;
-	color: #059bd8;
+	color: #8A94BF;
 	background: #303D73;
 }
 
@@ -217,5 +222,25 @@ a {
 }
 
 .btn-floating {
-	color: #07E6AB;
+	color: #059bd8;
+}
+
+.divider {
+	border: 2px solid black;
+	width: 75px;
+	text-align: center;
+	margin: 0 auto 60px auto;
+}
+
+.divider2 {
+	border: 2px solid white;
+	width: 75px;
+	text-align: center;
+	margin: 0 auto 60px auto;
+}
+
+.circle-icon {
+	background: #1B2240;
+	padding: 25px;
+	border-radius: 50% !important; 	
 }
