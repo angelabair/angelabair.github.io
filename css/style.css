@@ -71,7 +71,7 @@ button.btn .btn-outline-light {
 
 .navbar-light, .bg-light {
 	background: #303D73;
-	border-bottom: 3px solid #07E6AB;
+	border-bottom: 3px solid #DF1B41;
 	color: white;
 }
 
@@ -189,7 +189,7 @@ footer {
 
 a {
 	display: block;
-	padding: 4px 8px;
+	/*padding: 4px 8px;*/
 }
 
 .gallery-image-a {
@@ -218,7 +218,8 @@ a {
 }
 
 .social {
-	font-size: 30px;
+	font-size: 25px;
+	padding: 0;
 }
 
 .btn-floating {
@@ -241,6 +242,10 @@ a {
 
 .circle-icon {
 	background: #1B2240;
-	padding: 25px;
+	padding: 15px;
 	border-radius: 50% !important; 	
+}
+
+.social .list-inline li.list-inline-item{
+	margin: 0 !important;
 }
