@@ -101,7 +101,6 @@ button.btn .btn-outline-light {
 }
 
 #about {
-	height: 300px;
 	background-color: white;
 }
 
@@ -118,6 +117,11 @@ button.btn .btn-outline-light {
 #contact {
 	color: white;
 	background-color: #1B2240;
+}
+
+.img-profile {
+	height: 375px;
+	margin-bottom: 3rem; 
 }
 
 form {
@@ -137,7 +141,7 @@ h2.title {
 
 .back-to-top {
 	position: absolute;
-	bottom: 165px;
+	bottom: 130px;
 	display: none;
 	font-size: 30px;
 	width: 50px;
@@ -149,11 +153,6 @@ h2.title {
 	cursor: pointer;
 	background-color: #07E6AB;
 }
-
-.btn-light .back-to-top {
-	color: purple;
-}
-
 
 footer {
 	position: relative;
@@ -190,20 +189,6 @@ footer {
 a {
 	display: block;
 	/*padding: 4px 8px;*/
-}
-
-.gallery-image-a {
-	display: block;
-	height: 250px;
-	min-width: 200px;
-	background-position: center center;
-	transition: ease all 950ms;
-	background-repeat: no-repeat;
-	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 0;
-	background-size: cover;
-	background-image: url('https://gamepedia.cursecdn.com/dota2_gamepedia/b/bb/Lich_icon.png?version=7cb34de5d2bb15610cda9474d6c1b306');
 }
 
 .contact-info {

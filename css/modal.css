@@ -92,4 +92,16 @@
 	transition-delay:.2s;
 }
 
+.img-responsive {
+	height: 200px;
+	margin: auto;
+	color: #ccc;
+}
 
+.modal-header {
+	display: block !important;
+}
+
+.modal-title {
+	font-size: 35px;
+}
