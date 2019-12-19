@@ -92,6 +92,14 @@
 	transition-delay:.2s;
 }
 
+#portfolio div.col-md-4 {
+	height: 200px;
+}
+
+#portfolio div.col-xs-3 {
+	min-width: 275px;
+}
+
 .img-responsive {
 	height: 200px;
 	margin: auto;
